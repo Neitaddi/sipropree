@@ -1,0 +1,36 @@
+.ServiceIdNoServices h1 {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  padding: 40px 20px 30px 50px;
+}
+.ServiceIdNoServices {
+  width: 25%;
+  border-style: solid;
+  background-color: #253041;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.ServiceIdMain {
+  display: flex;
+  width: 100%;
+}
+.ServiceIdDetail {
+  width: 75%;
+  padding: 50px;
+}
+.ServiceIdDetail p {
+  font-family: "Roboto", sans-serif;
+      font-size: 15px;
+    line-height: 1.75;
+    color: #969696;
+    text-rendering: optimizeLegibility;
+
+}
+
+.ServiceIdDetailImage{
+overflow: hidden}

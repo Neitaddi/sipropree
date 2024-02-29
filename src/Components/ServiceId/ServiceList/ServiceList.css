@@ -1,0 +1,20 @@
+.ServiceList {
+  border-style: solid;
+
+  /* margin: 10px; */
+}
+.ServiceListName {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: white;
+  padding: 20px;
+  background-color: #253041;
+}
+.ServiceListName:hover {
+  background-color: #2e9feb61;
+}
+
+.ServiceListName li {
+  font-size: 20px;
+}

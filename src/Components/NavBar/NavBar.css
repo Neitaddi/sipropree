@@ -1,0 +1,117 @@
+header {
+  background: #253041;
+  font-family: "Manrope", sans-serif;
+  border-color: aliceblue;
+  border-style: solid;
+  padding: 20px 0px;
+   position: sticky;
+  top: 0;
+  width: 100%;
+
+  padding: 10px 0;
+  z-index: 1000;
+  
+  
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  overflow: hidden;
+  
+
+  /* align-content: center; */
+}
+.logo {
+  height: 70px;
+  width: 70px;
+}
+
+.navigatorLink {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  height: 0;
+}
+.linkSipropre,
+.rendezvousNavbarLink {
+  list-style: none;
+}
+/* .linkSipropre:hover {
+text-decoration: underline;
+text-decoration-color: #53b0ee;
+
+} */
+.linkSipropre:hover .linkSipropreLink {
+color: #53b0ee;
+}
+.linkSipropre a,
+.rendezvousNavbarLink a {
+  text-decoration: none;
+  color: white;
+}
+.rendezvousNavbarLink {
+  /* display: flex;
+  align-content: center;
+  align-items: center; */
+  background-color: #2e9feb;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #253041;
+
+  padding: 20px 20px;
+}
+.rendezvousNavbarLink:hover a {
+  color: white;
+}
+.rendezvousNavbarLink:hover {
+  cursor: pointer;
+ box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+   background-color: #2e9feb61;
+  /* background-color: #82c2ed; */
+}
+.rendezvousNavbar {
+  margin-left: 20px;
+}
+.service {
+  float: left;
+ 
+  /* overflow: hidden; */
+}
+.dropdowndownServices {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  /* border-style: solid; */
+}
+.service:hover .dropdowndownServices {
+  display: block;
+  
+}
+.dropdownServicesList a {
+  text-decoration: none;
+  /* border-style: solid; */
+}
+.dropdownServicesList {
+  list-style: none;
+}
+.dropdowndownServices {
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+}
+.dropdownServicesList {
+  padding: 20px 30px;
+}
+.dropdownServicesList a {
+  color: #253041;
+}
+
+.dropdownServicesList:hover {
+  background-color: #2e9feb;
+}
+.dropdownServicesList:hover a {
+  color: white;
+}

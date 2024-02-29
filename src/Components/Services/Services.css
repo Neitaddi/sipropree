@@ -1,0 +1,70 @@
+.Services {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.ServicesImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.ServicesOverlay {
+  font-size: 20px;
+  background-color: #2e3d47ce;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30% 10%;
+}
+
+.ServicesOverlay h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  font-family: "Manrope", sans-serif;
+}
+.ServicesOverlay h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  font-family: "Manrope", sans-serif;
+}
+.ServicesBook {
+  margin-top: 30px;
+  background-color: #1793e5;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #2e9feb00;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  color: #ffffff;
+  padding: 20px 20px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+}
+.ServicesBook:hover {
+  background-color: #09436b61;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #ffffff00;
+  color: #ffffff;
+  padding: 20px 20px;
+  font-family: "Manrope", sans-serif;
+}
