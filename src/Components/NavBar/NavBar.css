@@ -24,8 +24,9 @@ header {
   /* align-content: center; */
 }
 .logo {
-  height: 70px;
-  width: 70px;
+height: 200px;
+width: 160px;
+
 }
 
 .navigatorLink {

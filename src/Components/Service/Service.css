@@ -48,6 +48,11 @@
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   padding-bottom: 5px;
+  width: 300px; 
+  height:80px; /* Adjust width as needed */
+  white-space: nowrap; /* Keeps the text on a single line */
+  overflow: hidden; /* Hides text that overflows the container */
+  text-overflow: ellipsis;
 }
 .ServiceCardRead {
   font-weight: 700;

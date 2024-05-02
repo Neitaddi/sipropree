@@ -76,8 +76,9 @@ const Footer = () => {
           </p>
           <p className="textFooterCardTel">
             <FaPhoneAlt className="si" />
-            07.58.98.09.42
+            +33 6 05 53 93 68
           </p>
+     
         </div>
         <div className="footerCard">
           {" "}

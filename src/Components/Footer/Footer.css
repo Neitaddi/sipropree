@@ -1,74 +1,71 @@
+/* General footer styling */
 .Footer {
-  background: #253041;
-  width: 100%;
-  padding-top: 90px;
-  /* padding-bottom: 10px; */
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-  
+  background-color: #253041; /* Light blue background with transparency */
+  color: white; /* White text for better visibility */
+  padding: 20px 50px; /* Padding around the content */
+  font-family: Arial, sans-serif; /* Consistent font family */
 }
-.FooterContainer {
-  /* border-style: solid;
-  border-color: white; */
-  background: #253041;
 
+.FooterContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Distributes the cards evenly */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+
 .footerCard {
-  /* border-style: solid;
-  height: 300px;
-  width: 400px; */
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
+  flex: 1; /* Each card takes equal width */
+  margin: 10px; /* Margin around cards */
+  padding: 20px; /* Padding inside cards */
+  background: rgba(0, 0, 0, 0.2); /* Slight dark background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  min-width: 280px; /* Minimum width */
 }
+
 .titleFooterCard {
-  font-weight: 500;
-  text-align: left;
-  color: white;
-  /* text-decoration: underline; */
+  margin-bottom: 15px; /* Space below the title */
+  font-size: 18px; /* Larger font size for headings */
 }
-.titleFooterCardescreption {
-  width: 300px;
-  text-align: justify;
-  font-weight: 50;
-  line-height: 1.3;
-  color: aliceblue;
+
+.titleFooterCardescreption, .footerCardLink, .textFooterCardMail, .textFooterCardTel, .textFooterCardH {
+  font-size: 14px; /* Standard text size */
+  line-height: 1.6; /* Better readability for text */
+  display: flex;
+  align-items: center;
 }
+
 .titleFooterCardButton {
-  background-color: aliceblue;
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #1793e5; /* Solid blue background for buttons */
+  text-align: center;
+  border-radius: 4px; /* Rounded button edges */
+  cursor: pointer; /* Pointer cursor on hover */
 }
+
 .titleFooterCardButton p {
-  font-weight: 500;
+  margin: 0; /* Remove default margin */
+  color: white; /* White text for visibility */
+  font-weight: bold; /* Bold font for emphasis */
 }
-.footerCardsLink {
-  padding: 0;
-  text-align: left;
-  color: white;
-}
-.si {
-  margin-right: 5px;
-}
-.textFooterCardMail,
-.textFooterCardTel,
-.textFooterCardH {
-  color: white;
+
+.footerCardLink {
   display: flex;
-  align-items: center;
+  align-items: center; /* Align icons and text */
+  margin-bottom: 8px; /* Space between links */
 }
-/* ------------FooterMentionLegale------------- */
+
+.si {
+  margin-right: 8px; /* Space between icon and text */
+}
 
 .FooterMentionLegale {
-  /* border-style: solid;
-  border-color: rgb(255, 255, 255); */
-  margin-top: 90px;
-  color: white;
-  background-color: #1a222f;
-  padding: 10px 0;
+  text-align: center; /* Center-align the legal mentions */
+  padding-top: 20px; /* Space above the text */
+  font-size: 12px; /* Smaller font size for legal mentions */
+  border-top: 1px solid #ddd; /* Divider line */
+}
+
+.footerCardsLink p:hover {
+  text-decoration: underline; /* Underline on hover for links */
 }

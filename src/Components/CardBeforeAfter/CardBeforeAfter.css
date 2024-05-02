@@ -1,0 +1,47 @@
+.cleaning-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure alignment is centered */
+    margin: 20px auto; /* Centering the card horizontally */
+    padding: 10px;
+    width: 80%; /* Medium size card */
+    max-width: 600px; /* Maximum width to ensure it does not get too large */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .image-container {
+    flex: 1; /* Equal width but with space for the divider */
+    position: relative; /* For precise control over img and text */
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Limiting image height */
+    border-radius: 4px;
+  }
+  
+  .caption {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .cleaning-card {
+      flex-direction: column;
+      .divider {
+        height: 2px; /* Change divider to horizontal in mobile view */
+        width: 90%; /* Relative width change */
+        margin: 10px auto; /* Centering the divider */
+      }
+    }
+  }
+  

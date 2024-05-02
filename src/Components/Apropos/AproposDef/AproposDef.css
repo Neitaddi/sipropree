@@ -1,0 +1,125 @@
+.AproposDef {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.AproposDef .AproposDefImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.AproposDef .AproposDefoverlay {
+  font-size: 20px;
+  background-color: #b8bbbd;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30% 10%;
+}
+.AproposDefoverlay .heading {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600;
+  color: #295877;
+  text-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  font-family: "Manrope", sans-serif;
+}
+
+.AproposDefoverlayParagraph {
+  color: #295877;
+  font-size: 20px;
+  width: 120vh;
+  text-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.AproposDefoverlay .AproposDefoverlayContact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: #000000a9;
+  border-style: solid;
+  border-radius: 60px;
+  /* border-width: 1px; */
+  border-color: #2e9feb00;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  color: #ffffff;
+  padding: 20px 30px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+}
+.AproposDefoverlay .AproposDefoverlayContact .AproposDefLink:hover,
+.AproposDefoverlay .AproposDefoverlayContact p:hover {
+  color: #0099ff;
+}
+.flexAproposDefb {
+  display: flex;
+}
+.AproposDefb {
+  display: flex;
+  margin-top: 50px;
+}
+.AproposDefLeft {
+  width: 50%;
+  text-align: left;
+
+  flex: 1; /* Each card takes equal width */
+  margin: 10px; /* Margin around cards */
+  padding: 50px; /* Padding inside cards */
+  background: rgba(
+    217,
+    236,
+    109,
+    0.2
+  ); /* Slight dark background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  min-width: 280px;
+}
+.AproposDefRigth {
+  flex: 1; /* Each card takes equal width */
+  margin: 10px; /* Margin around cards */
+  padding: 50px; /* Padding inside cards */
+  background: rgba(
+    217,
+    236,
+    109,
+    0.2
+  ); /* Slight dark background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  min-width: 280px;
+}
+.AproposDefRigth h1 {
+  font-weight: 700;
+  color: #295877;
+}
+
+.circle-image {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Make sure width and height are the same */
+  border-radius: 50%; /* This creates the circle shape */
+  object-fit: cover; /* Ensures the image covers the area without being stretched */
+  border: 2px solid #fff; /* Optional: adds a white border around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for depth */
+}
+.circle-imagediv {
+  display: flex;
+}
