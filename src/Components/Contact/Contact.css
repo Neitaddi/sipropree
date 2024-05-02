@@ -1,0 +1,83 @@
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .section-title {
+    color: #09436b; /* Dark blue */
+    margin-bottom: 15px;
+  }
+  
+  .contact-form-section, .map-container {
+    background: #ffffff00; /* Fully transparent background */
+    width: 48%; /* Equal width for form and map */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .form-row input,
+  .form-row select {
+    width: 48%; /* Allows for spacing between the two fields */
+    padding: 8px;
+    border: 1px solid #7a8286; /* Blue border */
+    border-radius: 4px;
+  }
+  
+  .form-row input:active,
+  .form-row select:active {
+   
+    border: 1px solid #1983b8; /* Blue border */
+
+  }
+  textarea {
+    width: 100%;
+    height: 80px; /* Fixed height for textarea */
+    padding: 8px;
+    border: 1px solid #1793e5; /* Blue border */
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px;
+ 
+    /* Blue background */
+    color: #09436b; /* White text */
+    border: solid 1px #09436b;
+    border-radius: 4px;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+  }
+  
+  button:hover {
+    background-color: #3d7596; 
+    color: #ffffff;/* Darker shade of blue on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .contact-page {
+      flex-direction: column;
+    }
+  
+    .contact-form-section, .map-container {
+      width: 100%;
+    }
+  }
+  

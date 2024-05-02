@@ -1,52 +1,55 @@
-.ServiceHistory {
+.cover{
+
   width: 90%;
   height: 300px;
   height: 700px;
 
   overflow-y: scroll;
 }
-.ServiceHistoryImages {
+
+.cleaning-card {
   display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  column-gap: 5px;
-  height: 350px;
-  border-radius: 8%;
-  width: 90%;
-  background-color: rgb(236, 242, 240);
-  margin: 20px 20px;
-  padding: 10px 10px;
-
-  /* border-style: solid;
-  border-color: black; */
-  border-width: 3px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  justify-content: space-between;
+  align-items: center; /* Ensure alignment is centered */
+  margin: 20px auto; /* Centering the card horizontally */
+  padding: 10px;
+  width: 80%; /* Medium size card */
+  max-width: 600px; /* Maximum width to ensure it does not get too large */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
 }
 
-.ServiceHistoryImagesBefore {
-  width: 50%;
-  border-style: solid;
-  border-color: rgb(222, 15, 15);
-  border-width: 3px;
-  overflow: hidden;
+.image-container {
+  flex: 1; /* Equal width but with space for the divider */
+  position: relative; /* For precise control over img and text */
+  text-align: center;
+  padding: 10px;
 }
-.ServiceHistoryImagesBefore .imhh {
-  object-fit: cover;
+
+
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Limiting image height */
+  border-radius: 4px;
 }
-.ServiceHistoryImagesAfter {
-  overflow: hidden;
-  width: 50%;
-  border-style: solid;
-  border-color: rgb(32, 15, 222);
-  border-width: 3px;
+
+.caption {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: bold;
 }
-.ServiceHistoryImagesAfter img {
-  object-fit: cover;
-}
-.vertical {
-  height: 80%;
-  width: 3px;
-  background-color: rgba(126, 126, 126, 0.515);
-  border-radius: 1px;
+
+@media (max-width: 768px) {
+  .cleaning-card {
+    flex-direction: column;
+    .divider {
+      height: 2px; /* Change divider to horizontal in mobile view */
+      width: 90%; /* Relative width change */
+      margin: 10px auto; /* Centering the divider */
+    }
+  }
 }

@@ -7,7 +7,7 @@ const Service = ({ service }) => {
   console.log("hello4", service);
 
   return (
-    <div className="ServiceCard">
+    <div className="ServiceCard"> 
       {" "}
       <div className="ServiceCardImgDiv" key={service.id}>
         <img src={service.img} alt="" srcset="" className="ServiceCardImg" />
@@ -15,7 +15,7 @@ const Service = ({ service }) => {
       <h1 className="ServiceCardHeading">{service.title}</h1>
       <p className="ServiceCardDesc">{service.Desc}</p>
       <Link to={`/service/${service.id}`} className="ServiceCardRead">
-        READ MORE{" "}
+       VOIR PLUS..{" "}
       </Link>
     </div>
   );

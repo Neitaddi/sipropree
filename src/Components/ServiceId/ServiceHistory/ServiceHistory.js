@@ -1,27 +1,27 @@
 import React from "react";
 import "./ServiceHistory.css";
 
-const ServiceHistory = ({ service }) => {
+const ServiceHistory = ({ service , beforeText, afterText }) => {
   return (
-    <div className="ServiceHistory">
-      <div className="ServiceHistoryTitle">
-        <h1 className="ServiceHistoryImagesBeforeText"> Avant</h1>
-        <h1 className="ServiceHistoryImagesAfterText">Apres</h1>
-      </div>
+  
+    <div className="cover">
       {service.imgs.map((image) => {
         return (
-          <div className="ServiceHistoryImages">
-            <div className="ServiceHistoryImagesBefore">
-              <img src={image.imgB} alt="" />
-            </div>
-            <div className="vertical"></div>
-            <div className="ServiceHistoryImagesAfter">
-              <img src={image.imgA} alt="" className="imhh"/>
-            </div>
+          <div className="cleaning-card">
+          <div className="image-container before">
+            <img src={image.imgB} alt="Before Cleaning" className="image"/>
+            <p className="caption">{beforeText}</p>
+          </div>
+          <div className="divider">  </div> {/* Vertical divider added here */}
+          <div className="image-container after">
+            <img src={image.imgA} alt="After Cleaning" className="image"/>
+            <p className="caption">{afterText}</p>
+          </div>
           </div>
         );
+        
       })}
-    </div>
+ </div>
   );
 };
 

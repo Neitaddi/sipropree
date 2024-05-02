@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../image/logo.png";
+import logo from "../../image/LOGOSIPROPREE.svg";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const NavBar = ({ services }) => {
               </Link>
             </li>
             <li className="linkSipropre">
-              <Link to="/contact" className="linkSipropreLink ">
+              <Link to="/apropos" className="linkSipropreLink ">
                 A propos
               </Link>
             </li>
@@ -40,7 +40,7 @@ const NavBar = ({ services }) => {
           </ul>
           <ul className="rendezvousNavbar">
             <li className="rendezvousNavbarLink">
-              <Link>Planifier un rendez-vous</Link>
+              <Link to="/contact">Planifier un rendez-vous</Link>
             </li>
           </ul>
         </div>

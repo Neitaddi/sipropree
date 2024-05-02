@@ -17,6 +17,11 @@ import image6 from "./image/parking.jpg";
 import image7 from "./image/résidentiel.jpg";
 import image8 from "./image/des vitres.jpg";
 import image9 from "./image/service11.jpg";
+import CardBeforeAfter from "./Components/CardBeforeAfter/CardBeforeAfter";
+import before from "./image/service2.jpg";
+
+import after from "./image/service1.jpg";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   const services = [
@@ -129,6 +134,9 @@ function App() {
       ],
     },
   ];
+ 
+
+
   return (
     <div className="App">
       <NavBar services={services} />
@@ -136,10 +144,16 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Acceuil />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Apropos />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/service/:id" element={<ServiceId />} />
+        <Route path="/apropos" element={<Apropos />} />
+       
+
+
        
       </Routes>
+
+      
       <Footer />
     </div>
   );
